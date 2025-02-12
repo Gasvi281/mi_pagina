@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.nav{
+    background-color: #fff;
+    color: #000;
+    padding: 1em;
+    box-shadow: 0 2px 5px;
+    top: 0;
+    left: 0;
+    
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img__nav{
+    height: 80px;
+    width: 120px;
+}
+
+.nav_menu{
+    display: flex;
+    gap: 1em;
+}
+
+.nav_menu-link{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.hero{
+    text-align: center;
+    padding: 2em;
+    background-color: #e0dbdb;
+}
+
+.hero_title{
+    font-size: 2em;
+}
+
+.hero_subtitle{
+    font-size: 1em;
+    color: #666;
+}
+
+.services{
+    padding: 2rem;
+    text-align: center;
+}
+
+.services-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card{
+    background: linear-gradient(to bottom, #252, #736);
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px solid #000;
+    transition: all 0.7s;
+}
+
+.wrap{
+    padding: 4.8rem;
+    position: relative;
+    width: 80%;
+}
+
+.clients{
+    align-items: center;
+    -webkit-box-align: center;
+    display: grid;
+    gap: 4.8rem 4.8rem;
+    justify-content: center;
+    margin: 4.8rem auto;
+    max-width: 1024px;
+}
+
+.clients li{
+    margin: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.clients img{
+    -webkit-filter: grayscale(100%) brightness(10%) contrast(10%);
+    filter: grayscale(100%) brightness(10%) contrast(10%);
+    height: 3.2rem;
+}
+
+.clients img:hover{
+    background: none;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+@media (min-width: 1024px){
+    .clients{
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .clients img{
+        height: 4rem;
+    }
+}
+
+.section{
+    padding: 2rem;
+    text-align: center;
+}
